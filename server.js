@@ -10,6 +10,9 @@ app.get("/", (req, res) => {
 app.get("/ping", (req, res) => {
   res.send("server is running");
 });
+app.get("/new", (req, res) => {
+  res.send("server is running");
+});
 
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}/`);
