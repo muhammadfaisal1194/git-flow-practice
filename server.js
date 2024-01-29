@@ -16,6 +16,9 @@ app.get("/new", (req, res) => {
 app.get("/data", (req, res) => {
   res.send("server is running");
 });
+app.get("/date", (req, res) => {
+  res.send("server is running");
+});
 
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}/`);
