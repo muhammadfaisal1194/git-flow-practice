@@ -7,6 +7,9 @@ const PORT = 4000;
 app.get("/", (req, res) => {
   res.send("api res");
 });
+app.get("/ping", (req, res) => {
+  res.send("server is running");
+});
 
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}/`);
